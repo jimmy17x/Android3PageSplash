@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#000000" >
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="#000000"
+		android:gravity="center"
+		android:orientation="vertical" >
+		<TextView
+			android:id="@+id/tv_logo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:text="Game Of Thrones \n Podcast\n"
+			android:textColor="#26A899"
+			android:textSize="25dip" />
+		<TextView
+			android:id="@+id/tv_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:text="Username"
+			android:textColor="#E8D661"
+			android:textSize="30dip" />
+		<EditText
+			android:id="@+id/et_username"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffffff"
+			android:ems="10"
+			android:inputType="textPersonName"
+			android:textColor="#000000" >
+		</EditText>
+		<TextView
+			android:id="@+id/tv_password"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="left"
+			android:text="Password"
+			android:textColor="#E8D661"
+			android:textSize="30dip" />
+		<EditText
+			android:id="@+id/et_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="#ffffff"
+			android:ems="10"
+			android:inputType="textPassword"
+			android:textColor="#000000" >
+		</EditText>
+		<Button
+			android:id="@+id/btn_login"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="30dip"
+			android:text="Sign in" />
+		<TextView
+			android:id="@+id/btn_login"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Or"
+			android:textColor="#ffffff"
+			android:textSize="25" />
+		<Button
+			android:id="@+id/btn_signup"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Sign Up" />
+	</LinearLayout>
+</ScrollView>
