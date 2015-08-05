@@ -6,14 +6,16 @@
 	android:orientation="vertical" >
 	<!-- TODO: Update blank fragment layout -->
 	<ImageView
-		android:id="@+id/iv_jon"
+		android:id="@+id/iv_house"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:src="@drawable/c" />
 	<TextView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip"
 		android:gravity="center"
 		android:text="Fire and Blood \n House Targaryen"
-		android:textColor="#62DBB1" />
+		android:textColor="#C764F4"
+		android:textSize="20dip" />
 </LinearLayout>

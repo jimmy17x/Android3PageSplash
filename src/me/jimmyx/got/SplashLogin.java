@@ -63,6 +63,9 @@ public class SplashLogin extends Fragment implements OnClickListener {
 					&& password.getText().toString().trim().equals("user")) {
 				Toast.makeText(getActivity(), "Welcome to Game of Thrones",
 						1000).show();
+				Intent home = new Intent(getActivity(),Home.class);
+				startActivity(home);
+				
 			} else {
 				Toast.makeText(getActivity(),
 						"wrong login credintals, try again", 1000).show();

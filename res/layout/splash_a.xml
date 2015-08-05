@@ -13,7 +13,9 @@
 	<TextView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:layout_marginTop="10dip"
 		android:gravity="center"
 		android:text=" &apos;Today is not the day i die&apos; \n - Oberyn ,\n The day he died"
-		android:textColor="#DBD362" />
+		android:textColor="#FC0905"
+		android:textSize="20dip" />
 </LinearLayout>
