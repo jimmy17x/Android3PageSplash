@@ -24,23 +24,28 @@ public final class R {
         public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int click_text_color=0x7f020000;
-        public static final int color_cursor=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int login_button=0x7f020003;
-        public static final int login_edit_text=0x7f020004;
+        public static final int a=0x7f020000;
+        public static final int b=0x7f020001;
+        public static final int c=0x7f020002;
+        public static final int click_text_color=0x7f020003;
+        public static final int color_cursor=0x7f020004;
+        public static final int ic_launcher=0x7f020005;
+        public static final int login_button=0x7f020006;
+        public static final int login_edit_text=0x7f020007;
     }
     public static final class id {
-        public static final int action_settings=0x7f090009;
-        public static final int btn_login=0x7f090006;
-        public static final int btn_signup=0x7f090008;
-        public static final int et_password=0x7f090005;
-        public static final int et_username=0x7f090003;
+        public static final int action_settings=0x7f09000b;
+        public static final int btn_login=0x7f090008;
+        public static final int btn_signup=0x7f09000a;
+        public static final int et_password=0x7f090007;
+        public static final int et_username=0x7f090005;
+        public static final int iv_jon=0x7f090002;
+        public static final int iv_oberyn=0x7f090001;
         public static final int pager=0x7f090000;
-        public static final int tv_login=0x7f090007;
-        public static final int tv_logo=0x7f090001;
-        public static final int tv_name=0x7f090002;
-        public static final int tv_password=0x7f090004;
+        public static final int tv_login=0x7f090009;
+        public static final int tv_logo=0x7f090003;
+        public static final int tv_name=0x7f090004;
+        public static final int tv_password=0x7f090006;
     }
     public static final class layout {
         public static final int activity_splash=0x7f030000;
