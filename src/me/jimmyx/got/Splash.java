@@ -1,6 +1,7 @@
 package me.jimmyx.got;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -10,10 +11,12 @@ import android.support.v4.view.ViewPager;
 import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 public class Splash extends FragmentActivity {
 
-	ViewPager viewPager = null;
+	private static ViewPager viewPager = null;
+	private static int backButtonCount;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +53,19 @@ public class Splash extends FragmentActivity {
 
 		return super.onOptionsItemSelected(item);
 	}
+	public void onBackPressed() {
+		if (backButtonCount >= 1) {
+			Intent intent = new Intent(Intent.ACTION_MAIN);
+			intent.addCategory(Intent.CATEGORY_HOME);
+			intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+			startActivity(intent);
+			finish();
+		} else {
+			Toast.makeText(this, "Press the back button to exit :(",
+					Toast.LENGTH_SHORT).show();
+			backButtonCount++;
+		}
+	}
 }
 
 class MyAdapter extends FragmentPagerAdapter {
@@ -81,4 +97,5 @@ class MyAdapter extends FragmentPagerAdapter {
 	public int getCount() {
 		return 4;
 	}
+	
 }

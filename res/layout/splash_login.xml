@@ -14,9 +14,14 @@
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:gravity="center"
-			android:text="Game Of Thrones \n Podcast\n"
+			android:text="Game of Thrones \n Podcast"
 			android:textColor="#26A899"
 			android:textSize="25dip" />
+		<View
+			android:layout_width="fill_parent"
+			android:layout_height="2dp"
+			android:layout_margin="5dip"
+			android:background="#6c1636" />
 		<TextView
 			android:id="@+id/tv_name"
 			android:layout_width="wrap_content"
@@ -29,10 +34,12 @@
 			android:id="@+id/et_username"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ffffff"
+			android:background="@drawable/login_edit_text"
 			android:ems="10"
 			android:inputType="textPersonName"
-			android:textColor="#000000" >
+			android:textColor="@drawable/click_text_color"
+			android:textColorHint="@drawable/click_text_color"
+			android:textCursorDrawable="@drawable/color_cursor" >
 		</EditText>
 		<TextView
 			android:id="@+id/tv_password"
@@ -46,28 +53,34 @@
 			android:id="@+id/et_password"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="#ffffff"
+			android:background="@drawable/login_edit_text"
 			android:ems="10"
 			android:inputType="textPassword"
-			android:textColor="#000000" >
+			android:textColor="@drawable/click_text_color"
+			android:textColorHint="@drawable/click_text_color"
+			android:textCursorDrawable="@drawable/color_cursor" >
 		</EditText>
 		<Button
 			android:id="@+id/btn_login"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
 			android:layout_marginTop="30dip"
-			android:text="Sign in" />
+			android:background="@drawable/login_button"
+			android:text="Sign in"
+			android:textColor="@drawable/click_text_color" />
 		<TextView
-			android:id="@+id/btn_login"
+			android:id="@+id/tv_login"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:text="Or"
-			android:textColor="#ffffff"
-			android:textSize="25" />
+			android:textColor="#1D78F7"
+			android:textSize="25dp" />
 		<Button
 			android:id="@+id/btn_signup"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Sign Up" />
+			android:background="@drawable/login_button"
+			android:text="Sign Up"
+			android:textColor="@drawable/click_text_color" />
 	</LinearLayout>
 </ScrollView>
